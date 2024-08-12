@@ -17,6 +17,7 @@ public class TiposVariaveis {
        char sexo = 'M'; // usado para apenas 1 caracter 
        boolean estaTrabalhando = true; // usado para valores booleanos, como true ou false
        Date dataNascimento = new Date(); // criando um novo objeto
+        System.out.println(dataNascimento);
 
         // tipo long precisa terminar com L e tipo float com F
 
@@ -26,6 +27,5 @@ public class TiposVariaveis {
 
         final int NUMERO = 1000; // assim que é declarada uma const no Java, com a palavra final e deve ser escrita em CAIXA ALTA.
 
-        
     }
 }
