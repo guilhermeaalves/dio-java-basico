@@ -208,3 +208,36 @@ extends: indica a superclasse que a subclasse está estendendo
 
 - `goto` não implementada na linguagem Java por ser considerada prejudicial
 
+### Conhecendo algumas exceções já mapeadas
+
+A linguagem Java dispõe de uma vasta lista de classes que representam exceções, abaixo iremos apresentar as mais comuns:
+
+| Nome                           | Causa                                                                |
+| ------------------------------ | -------------------------------------------------------------------- |
+| java.lang.NullPointerException | Quando tentamos obter alguma informação de uma variável nula.        |
+| java.lang.ArithmeticException  | Quando tentamos dividir um valor por zero.                           |
+| java.sql.SQLException          | Quando existe algum erro relacionado a interação com banco de dados. |
+| java.io.FileNotFoundException  | Quando tentamos ler ou escrever em um arquivo que não existe.        |
+
+### Tratamento de exceções
+
+E quando inevitavelmente ocorrer uma exceção? Como nós desenvolvedores podemos ajustar o nosso algoritmo para amenizar o ocorrido?
+
+A instrução **`try`** permite que você defina um bloco de código para ser testado quanto a erros enquanto está sendo executado.&#x20;
+
+A instrução **`catch`** permite definir um bloco de código a ser executado, caso ocorra um erro no bloco try.&#x20;
+
+A instrução **`finally`** permite definir um bloco de código a ser executado independente de ocorrer um erro ou não. As palavras-chave `try` e `catch` vêm em pares:&#x20;
+
+Estrutura de um bloco com try e catch
+
+```java
+try {
+    //  bloco de código conforme esperado
+}
+catch(Exception e) {
+    // precisamos saber qual exceção
+    // bloco de código que captura as exceções que podem acontecer
+    // em caso de um fluxo não previsto
+}
+```
