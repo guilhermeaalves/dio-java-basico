@@ -3,6 +3,7 @@ package edu.guilherme.segundasemana;
 import java.util.Date;
 
 public class TiposVariaveis {
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
 
         // Tipos de variáveis em Java
